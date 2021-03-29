@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = 'UTF-8'/>
+    <title>signup</title>
+    <link rel = "stylesheet" type = "text/css" href = "main.css"/>
+</head>
+<body>
+
+    <header>
+        <h1 class="first">3대500 헬스 용품 SHOP</h1>
+        <img class="second" src="dumbbell.jpg" alt="dumbbell">
+    </header>
+
+    <div class = 'content'> 
+    <form method = "post" action = "login.html">
+    <div class="box">
+    <p> <strong>회원정보 입력</strong>
+        <p><label> 이름 :<input name = "name" type = "text" size = 10 placeholder = "이름" required autofocus autocomplete="on"/></label></p>
+        <p><label> 생일 :<input name = "birthday" type = "date" /> &nbsp;&nbsp;(yyyy-mm-dd)</label></p>
+        <p>성별 :<br>
+            <label><input name="gender" type="radio" value="male" checked>male</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="gender" type="radio" value="female">female</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><input name="gender" type="radio" value="etc">etc</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </p>
+        <p><label> 핸드폰 번호 :<input name = "tellNumber" type = "tell" placeholder = "###-####-####" pattern = "\d{3}-\d{4}-\d{4}" required /></label></p>
+        <p><label> 아이디 :<input name="id" type="text" size = 20 placeholder = "아이디" required autocomplete="on" /></label></p>
+        <p><label> 비밀번호 :<input name="pwd" type="text" size=20 placeholder="비밀번호" required/></label></p>	
+        <p><label> 비밀번호 확인:<input name ="pwd_re" type="text" size=20 placeholder="비밀번호 확인" required/></label></p>	
+        <p class="strong"><label> 3대 몇? : &nbsp;&nbsp;&nbsp;&nbsp; 300<input name="3dae" type="range" min="300" max="700" value="500"/>700 &nbsp;&nbsp;&nbsp;&nbsp;(3대300 이하 회원가입을 다시 한 번 생각해볼 것!)</label></p>
+
+    </p>
+    </div>
+    <div class="button">
+        <button type="submit" class="signup_button">가입</button>
+        <a href = 'login.html'>
+            <button type = "button" class = "return_button">돌아가기</button>
+        </a>
+    </div>
+    </form>
+    </div>  
+
+    <footer>  
+            <h6>이용해주셔서 감사합니다!<br>문의번호: 77-777-7777</h6>
+    </footer>
+
+</body>
+</html>
