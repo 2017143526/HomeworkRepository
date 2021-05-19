@@ -1,72 +1,146 @@
 [
     {
-        "id" : 1,
         "name" : "스트랩",
         "won" : 70000,
         "img" : "thing1.jpg",
         "tag" : "bodyweight"
     },
     {
-        "id" : 2,
         "name" : "케틀벨",
         "won" : 20000,
         "img" : "thing2.jpg",
         "tag" : "bodyweight"
     },
     {
-        "id" : 3,
         "name" : "AB슬라이드",
         "won" : 15000,
         "img" : "thing3.jpg",
         "tag" : "bodyweight"
     },
     {
-        "id" : 4,
         "name" : "런닝머신",
         "won" : 240000,
         "img" : "thing4.jpg",
         "tag" : "bodyweight"
     },
     {
-        "id" : 5,
         "name" : "턱걸이 기구",
         "won" : 85000,
         "img" : "thing5.jpg",
         "tag" : "bodyweight"
     },
     {
-        "id" : 6,
         "name" : "덤벨",
         "won" : 15000,
         "img" : "thing6.jpg",
         "tag" : "health"
     },
     {
-        "id" : 7,
         "name" : "바벨",
         "won" : 30000,
         "img" : "thing7.jpg",
         "tag" : "health"
     },
     {
-        "id" : 8,
         "name" : "스미스머신",
         "won" : 155000,
         "img" : "thing8.jpg",
         "tag" : "health"
     },
     {
-        "id" : 9,
         "name" : "벨트",
         "won" : 40000,
         "img" : "thing9.jpg",
         "tag" : "health"
     },
     {
-        "id" : 10,
         "name" : "딥스바",
         "won" : 25000,
         "img" : "thing10.jpg",
         "tag" : "bodyweight"
+    },
+    {
+        "name" : "줄넘기",
+        "won" : 5000,
+        "img" : "thing11.jpg",
+        "tag" : "pilates"
+    },
+    {
+        "name" : "레깅스",
+        "won" : 15000,
+        "img" : "thing12.jpg",
+        "tag" : "Pilates"
+    },
+    {
+        "name" : "마사지공",
+        "won" : 20000,
+        "img" : "thing13.jpg",
+        "tag" : "Pilates"
+    },
+    {
+        "name" : "요가메트",
+        "won" : 40000,
+        "img" : "thing14.jpg",
+        "tag" : "Pilates"
+    },
+    {
+        "name" : "고무줄",
+        "won" : 5000,
+        "img" : "thing15.jpg",
+        "tag" : "Pilates"
+    },
+    {
+        "name" : "플레이트",
+        "won" : 30000,
+        "img" : "thing16.jpg",
+        "tag" : "health"
+    },
+    {
+        "name" : "링 딥스",
+        "won" : 15000,
+        "img" : "thing17.jpg",
+        "tag" : "crossfit"
+    },
+    {
+        "name" : "도르래",
+        "won" : 25000,
+        "img" : "thing18.jpg",
+        "tag" : "crossfit"
+    },
+    {
+        "name" : "로잉머신",
+        "won" : 90000,
+        "img" : "thing19.jpg",
+        "tag" : "crossfit"
+    },
+    {
+        "name" : "밧줄",
+        "won" : 20000,
+        "img" : "thing20.jpg",
+        "tag" : "crossfit"
+    },
+    {
+        "name" : "닭가슴살",
+        "won" : 4000,
+        "img" : "thing21.jpg",
+        "tag" : "food"
+    },
+    {
+        "name" : "종합비타민",
+        "won" : 45000,
+        "img" : "thing22.jpg",
+        "tag" : "food"
+    },
+    {
+        "name" : "미네랄",
+        "won" : 25000,
+        "img" : "thing23.jpg",
+        "tag" : "food"
+    },
+    {
+        "name" : "보충제",
+        "won" : 55000,
+        "img" : "thing24.jpg",
+        "tag" : "food"
     }
 ]  
