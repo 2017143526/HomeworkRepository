@@ -172,9 +172,9 @@ let count = 6;
         //    max=products_list.length;
         //}
         //for(let i = count; i < max; i++) {
-        each_item(products_list[6]);
+        each_item(products_list[count]);
         //}
-        count = count+2;
+        count = count+1;
     
     }
 
@@ -216,7 +216,7 @@ let count = 6;
 
     window.onscroll = () => {
         if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
-            if(count<products.length){
+            if(count<=products.length){
                 products_list = products;
                 add_item();
             }
