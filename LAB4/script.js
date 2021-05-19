@@ -7,7 +7,7 @@
 fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
-    let products = json;
+    var products = json;
     initialize(products);
   }).catch(function(err) {
     console.log('error');
@@ -67,12 +67,12 @@ fetch('products.json').then(function(response) {
       // if the category and search term are the same as they were the last time a
       // search was run, the results will be the same, so there is no point running
       // it again — just return out of the function
-      if(category.value === lastCategory && searchTerm.value.trim() === lastSearch) {
+      if(category.value === lastCategory && searchTerm.value === lastSearch) {
         return;
       } else {
         // update the record of last category and search term
         lastCategory = category.value;
-        lastSearch = searchTerm.value.trim();
+        lastSearch = searchTerm.value;
         // In this case we want to select all products, then filter them by the search
         // term, so we just set categoryGroup to the entire JSON object, then run selectProducts()
         if(category.value === 'All') {
