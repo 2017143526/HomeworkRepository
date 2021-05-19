@@ -4,7 +4,7 @@ fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
     products = json;
-    item_list(products);
+    item_list(products, 0, 6);
   }).catch(function(err) {
     console.log('error');
   });
@@ -19,7 +19,7 @@ fetch('products.json').then(function(response) {
   }
 
   
-  function item_list(products) {
+  function item_list(products, start, end) {
     
     const category = document.querySelector('#category');
     const serch_item = document.querySelector('#search');
@@ -64,7 +64,7 @@ fetch('products.json').then(function(response) {
 
         } else {
 
-          for(let i = 0; i < products.length ; i++) {
+          for(let i = start; i < end ; i++) {
 
             if(products[i].tag === category.value) {
               products_category_list.push(products[i]);
@@ -83,7 +83,7 @@ fetch('products.json').then(function(response) {
         update_item();
       } else {
   
-        for(let i = 0; i < products_category_list.length ; i++) {
+        for(let i = start; i < end ; i++) {
           if(products_category_list[i].name.indexOf(serch_item.value) !== -1) {
             products_list.push(products_category_list[i]);
           }
@@ -107,7 +107,7 @@ fetch('products.json').then(function(response) {
         main.appendChild(h2);
       
       } else {
-        for(let i = 0; i < products_list.length; i++) {
+        for(let i = start; i < end; i++) {
           each_item(products_list[i]);
         }
       }
@@ -128,7 +128,7 @@ fetch('products.json').then(function(response) {
     }
   */
    
-    function each_item(product) {
+    function each_item(item) {
 
       const div = document.createElement('div');
       const h3 = document.createElement('h3');
@@ -139,14 +139,14 @@ fetch('products.json').then(function(response) {
       button.textContent= '+ more';
   
  
-      div.setAttribute('class', product.tag);
+      div.setAttribute('class', item.tag);
   
   
-      h3.textContent = product.name;
-      h4.textContent = product.won + "원";
+      h3.textContent = item.name;
+      h4.textContent = item.won + "원";
   
-      image.src = 'image_list/' + product.img;
-      image.alt = product.name;
+      image.src = 'image_list/' + item.img;
+      image.alt = item.name;
       image.classList.add("productimage");
   
 
