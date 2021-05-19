@@ -11,7 +11,7 @@ fetch('products.json').then(function(response) {
   
   window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-      //item_list(products);
+      item_list(products, 6, products.length);
       //const main = document.querySelector('main');
       //main.innerHTML="hahaha";
     }
@@ -112,21 +112,6 @@ fetch('products.json').then(function(response) {
         }
       }
     }
-/*
-    function fetchBlob(product) {
-      
-      let url = 'image_list/' + product.img;
-    
-      fetch(url).then(function(response) {
-          return response.blob();
-      }).then(function(blob) {
-     
-        let objectURL = URL.createObjectURL(blob);
-   
-        each_item(objectURL, product);
-      });
-    }
-  */
    
     function each_item(item) {
 
