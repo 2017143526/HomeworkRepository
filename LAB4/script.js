@@ -28,7 +28,7 @@ fetch('products.json').then(function(response) {
     const category = document.querySelector('#category');
     const searchTerm = document.querySelector('#searchTerm');
     const searchBtn = document.querySelector('.result');
-    const items = document.querySelector('items');
+    const main = document.querySelector('main');
   
     // keep a record of what the last category and search term entered were
     let lastCategory = category.value;
@@ -79,7 +79,7 @@ fetch('products.json').then(function(response) {
           categoryGroup = products;
           selectProducts();
         // If a specific category is chosen, we need to filter out the products not in that
-        // category, then put the reitemsing products inside categoryGroup, before running
+        // category, then put the remaining products inside categoryGroup, before running
         // selectProducts()
         } else {
           // the values in the <option> elements are uppercase, whereas the categories
@@ -129,16 +129,16 @@ fetch('products.json').then(function(response) {
   
     // start the process of updating the display with the new set of products
     function updateDisplay() {
-      // remove the previous contents of the <items> element
-      while (items.firstChild) {
-        items.removeChild(items.firstChild);
+      // remove the previous contents of the <main> element
+      while (main.firstChild) {
+        main.removeChild(main.firstChild);
       }
   
       // if no products match the search term, display a "No results to display" message
       if(finalGroup.length === 0) {
         const para = document.createElement('p');
         para.textContent = 'No results to display!';
-        items.appendChild(para);
+        main.appendChild(para);
       // for each product we want to display, pass its product object to fetchBlob()
       } else {
         for(let i = 0; i < finalGroup.length; i++) {
@@ -166,7 +166,7 @@ fetch('products.json').then(function(response) {
       });
     }
   
-    // Display a product inside the <items> element
+    // Display a product inside the <main> element
     function showProduct(objectURL, product) {
       // create <section>, <h2>, <p>, and <img> elements
       const section = document.createElement('section');
@@ -195,7 +195,7 @@ fetch('products.json').then(function(response) {
       image.classList.add("productimage");
   
       // append the elements to the DOM as appropriate, to add the product to the UI
-      items.appendChild(section);
+      main.appendChild(section);
       /*section.appendChild(para);*/
      
       function showMore(){
