@@ -72,17 +72,6 @@ let count = 6;
         console.log('error');
     });
   
-
-    window.onscroll = () => {
-        if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
-            products_list = products;
-            add_item();
-        }
-    }
-
-    
-
-  
     function load() {
   
     recent_category = category.value;
@@ -178,10 +167,14 @@ let count = 6;
     }
 
     function add_item() {
-        //for(let i = count; i < count+2; i++) {
-        each_item(products_list[6]);
-        //}
-        //count = count+2;
+        let max=count+2;
+        if(products_list.length < count+2){
+            max=products_list.length;
+        }
+        for(let i = count; i < max; i++) {
+        each_item(products_list[i]);
+        }
+        count = count+2;
     
     }
 
@@ -219,6 +212,15 @@ let count = 6;
     div.appendChild(h4);
     }
 
+    }
+
+    window.onscroll = () => {
+        if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
+            if(count<products.length){
+                products_list = products;
+                add_item();
+            }
+        }
     }
 
 </script> 
