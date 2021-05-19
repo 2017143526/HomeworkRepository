@@ -27,7 +27,7 @@ fetch('products.json').then(function(response) {
     // grab the UI elements that we need to manipulate
     const category = document.querySelector('#category');
     const searchTerm = document.querySelector('#searchTerm');
-    const searchBtn = document.querySelector('button');
+    const searchBtn = document.querySelector('.result');
     const main = document.querySelector('main');
   
     // keep a record of what the last category and search term entered were
