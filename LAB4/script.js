@@ -192,6 +192,7 @@ fetch('products.json').then(function(response) {
       // Set the src of the <img> element to the ObjectURL, and the alt to the product "name" property
       image.src = objectURL;
       image.alt = product.name;
+      image.class = "productimage";
   
       // append the elements to the DOM as appropriate, to add the product to the UI
       main.appendChild(section);
