@@ -10,8 +10,6 @@ fetch('products.json').then(function(response) {
   window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
       item_list(products, 0, products.length);
-      //const main = document.querySelector('main');
-      //main.innerHTML="hahaha";
     }
   
   }
