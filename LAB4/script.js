@@ -7,7 +7,7 @@
 fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
-    let products = json;
+    var products = json;
     initialize(products);
   }).catch(function(err) {
     console.log('error');
