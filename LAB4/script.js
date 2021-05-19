@@ -11,7 +11,9 @@ fetch('products.json').then(function(response) {
   
   window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-      item_list(products);
+      //item_list(products);
+      const main = document.querySelector('main');
+      main.innerHTML="hahaha";
     }
   
   }
@@ -151,6 +153,8 @@ fetch('products.json').then(function(response) {
       main.appendChild(div);
      
       function more(){
+        h3.style.textAlign='center';
+        h4.style.textAlign='center';
         div.appendChild(h3);
         div.appendChild(h4);
       }
