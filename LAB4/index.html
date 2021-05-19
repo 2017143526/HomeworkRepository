@@ -72,14 +72,14 @@ let count = 6;
         console.log('error');
     });
   
+
     window.onscroll = () => {
-        if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-            if(count<products.length){
-                add_item();
-            }
+        if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
+            add_item();
         }
-    
     }
+
+    
 
   
     function load() {
@@ -148,7 +148,6 @@ let count = 6;
 
     update_item();
     }
-
     }
 
     function update_item() {
