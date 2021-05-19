@@ -2,10 +2,12 @@
 // report any errors that occur in the fetch operation
 // once the products have been successfully loaded and formatted as a JSON object
 // using response.json(), run the initialize() function
+var products;
+
 fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
-    let products = json;
+    products = json;
     initialize(products);
   }).catch(function(err) {
     console.log('Fetch problem: ' + err.message);
@@ -83,11 +85,11 @@ fetch('products.json').then(function(response) {
           // the values in the <option> elements are uppercase, whereas the categories
           // store in the JSON (under "type") are lowercase. We therefore need to convert
           // to lower case before we do a comparison
-          let lowerCaseType = category.value.toLowerCase();
+          //let lowerCaseType = category.value.toLowerCase();
           for(let i = 0; i < products.length ; i++) {
             // If a product's type property is the same as the chosen category, we want to
             // display it, so we push it onto the categoryGroup array
-            if(products[i].type === lowerCaseType) {
+            if(products[i].type === category.value) {
               categoryGroup.push(products[i]);
             }
           }
@@ -109,12 +111,12 @@ fetch('products.json').then(function(response) {
       } else {
         // Make sure the search term is converted to lower case before comparison. We've kept the
         // product names all lower case to keep things simple
-        let lowerCaseSearchTerm = searchTerm.value.trim().toLowerCase();
+        //let lowerCaseSearchTerm = searchTerm.value.trim().toLowerCase();
         // For each product in categoryGroup, see if the search term is contained inside the product name
         // (if the indexOf() result doesn't return -1, it means it is) — if it is, then push the product
         // onto the finalGroup array
         for(let i = 0; i < categoryGroup.length ; i++) {
-          if(categoryGroup[i].name.indexOf(lowerCaseSearchTerm) !== -1) {
+          if(categoryGroup[i].name.indexOf(searchTerm.value) !== -1) {
             finalGroup.push(categoryGroup[i]);
           }
         }
@@ -180,12 +182,12 @@ fetch('products.json').then(function(response) {
   
       // Give the <h2> textContent equal to the product "name" property, but with the first character
       // replaced with the uppercase version of the first character
-      heading.textContent = product.name.replace(product.name.charAt(0), product.name.charAt(0).toUpperCase());
-  
+      heading.textContent = product.name;
+
       // Give the <p> textContent equal to the product "price" property, with a $ sign in front
       // toFixed(2) is used to fix the price at 2 decimal places, so for example 1.40 is displayed
       // as 1.40, not 1.4.
-      para.textContent = '$' + product.price.toFixed(2);
+      para.textContent = product.price;
   
       // Set the src of the <img> element to the ObjectURL, and the alt to the product "name" property
       image.src = objectURL;
