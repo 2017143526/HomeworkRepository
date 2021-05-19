@@ -78,7 +78,7 @@ fetch('products.json').then(function(response) {
 
       } else {
   
-        for(let i = start; i < products_category_list.length ; i++) {
+        for(let i = 0; i < products_category_list.length ; i++) {
           if(products_category_list[i].name.indexOf(serch_item.value) !== -1) {
             products_list.push(products_category_list[i]);
           }
