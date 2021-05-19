@@ -1,10 +1,8 @@
-var products;
-
 fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
-    products = json;
-    item_list(products, 0, 4);
+    let products = json;
+    item_list(products, 0, products.length);
   }).catch(function(err) {
     console.log('error');
   });
