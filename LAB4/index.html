@@ -60,26 +60,29 @@ let recent_item;
 let products_list;
 let products_category_list;
 let products;
+let count = 6;
 
 
-    fetch('products.json').then(function(response) {
+    fetch('product.json').then(function(response) {
         return response.json();
     }).then(function(json) {
         products = json;
-        load(products);
+        load();
     }).catch(function(err) {
         console.log('error');
     });
   
     window.onscroll = () => {
         if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-        //load(products);
+            if(count<products.length){
+                //add_item();
+            }
         }
     
     }
 
   
-    function load(products) {
+    function load() {
   
     recent_category = category.value;
     recent_item = '';
@@ -162,14 +165,31 @@ let products;
         main.appendChild(h2);
     
     } else {
-
+        let max=6;
+        if(products_list.length <= 6){
+            max=products_list.length;
+        }
         
-        for(let i = 0; i < products_list.length; i++) {
+        for(let i = 0; i < max; i++) {
         each_item(products_list[i]);
         }
 
     }
     }
+
+    function add_item() {
+        let max = count+2;
+        if(products_list.length<count+2){
+            max = products_list.length;
+        }
+        for(let i = count; i < max; i++) {
+        each_item(products_list[i]);
+        }
+        count = count+2;
+    
+    }
+
+
 
     function each_item(item) {
 
@@ -203,12 +223,6 @@ let products;
     div.appendChild(h4);
     }
 
-    }
-
-    function addload(){
-                start = end;
-                end += 2;
-                update_item();
     }
 
 </script> 
