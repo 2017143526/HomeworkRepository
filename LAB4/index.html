@@ -75,6 +75,9 @@ let count = 6;
 
     window.onscroll = () => {
         if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
+            const h3 = document.createElement('h3');
+            h3.textContent = "haha";
+            main.appendChild(h3);
             add_item();
         }
     }
