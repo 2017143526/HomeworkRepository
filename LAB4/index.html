@@ -75,9 +75,6 @@ let count = 6;
 
     window.onscroll = () => {
         if(window.innerHeight + window.scrollY >= document.body.scrollHeight){
-            const h3 = document.createElement('h3');
-            h3.textContent = "haha";
-            main.appendChild(h3);
             add_item();
         }
     }
@@ -180,7 +177,9 @@ let count = 6;
     }
 
     function add_item() {
-        
+        const h3 = document.createElement('h3');
+            h3.textContent = "haha";
+            main.appendChild(h3);
         for(let i = count; i < count+2; i++) {
         each_item(products_list[i]);
         }
