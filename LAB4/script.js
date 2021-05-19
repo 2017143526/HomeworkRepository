@@ -22,6 +22,8 @@ fetch('products.json').then(function(response) {
   function item_list(products, start, end) {
     
     const category = document.querySelector('#category');
+
+
     const serch_item = document.querySelector('#search');
     const serch_result = document.querySelector('.result');
     const main = document.querySelector('main');
@@ -30,17 +32,12 @@ fetch('products.json').then(function(response) {
     let recent_category = category.value;
     let recent_item = '';
 
-    let products_category_list;
-    let products_list;
-  
-  
-    products_list = products;
+    let products_list = products;
     update_item();
   
-    products_category_list = [];
+    let products_category_list = [];
     products_list = [];
   
- 
     serch_result.onclick = give_result;
   
     function give_result(e) {
@@ -79,8 +76,10 @@ fetch('products.json').then(function(response) {
     function search_product() {
 
       if(serch_item.value === '') {
+
         products_list = products_category_list;
         update_item();
+
       } else {
   
         for(let i = start; i < end ; i++) {
@@ -102,38 +101,42 @@ fetch('products.json').then(function(response) {
   
      
       if(products_list.length === 0) {
+
         const h2 = document.createElement('h2');
         h2.textContent = 'Nothing!!';
         main.appendChild(h2);
       
       } else {
+
         for(let i = start; i < end; i++) {
           each_item(products_list[i]);
         }
+
       }
     }
    
     function each_item(item) {
 
-      const div = document.createElement('div');
       const h3 = document.createElement('h3');
-      const h4 = document.createElement('h4');
-      const image = document.createElement('img');
-      const button = document.createElement('btn');
-      button.classList.add('btn');
-      button.textContent= '+ more';
-  
- 
-      div.setAttribute('class', item.tag);
-  
-  
       h3.textContent = item.name;
+
+      const h4 = document.createElement('h4');
       h4.textContent = item.won + "원";
-  
+
+      const image = document.createElement('img');
       image.src = 'image_list/' + item.img;
       image.alt = item.name;
       image.classList.add("productimage");
-  
+
+      const plus = document.createElement('btn');
+      plus.classList.add('btn');
+      plus.textContent= '+ more';
+      plus.onclick = more;
+
+      const div = document.createElement('div');
+      div.setAttribute('class', item.tag);
+      div.appendChild(image);
+      div.appendChild(plus);
 
       main.appendChild(div);
      
@@ -143,10 +146,7 @@ fetch('products.json').then(function(response) {
         div.appendChild(h3);
         div.appendChild(h4);
       }
-      div.appendChild(image);
-      div.appendChild(button);
-      button.onclick = more;
-  
+      
     }
   }
   
