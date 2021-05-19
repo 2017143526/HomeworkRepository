@@ -1,59 +1,69 @@
 [
     {
+        "id" : 1,
         "name" : "스트랩",
         "won" : 70000,
         "img" : "thing1.jpg",
         "tag" : "bodyweight"
     },
     {
+        "id" : 2,
         "name" : "케틀벨",
         "won" : 20000,
         "img" : "thing2.jpg",
         "tag" : "bodyweight"
     },
     {
+        "id" : 3,
         "name" : "AB슬라이드",
         "won" : 15000,
         "img" : "thing3.jpg",
         "tag" : "bodyweight"
     },
     {
+        "id" : 4,
         "name" : "런닝머신",
         "won" : 240000,
         "img" : "thing4.jpg",
         "tag" : "bodyweight"
     },
     {
+        "id" : 5,
         "name" : "턱걸이 기구",
         "won" : 85000,
         "img" : "thing5.jpg",
         "tag" : "bodyweight"
     },
     {
+        "id" : 6,
         "name" : "덤벨",
         "won" : 15000,
         "img" : "thing6.jpg",
         "tag" : "health"
     },
     {
+        "id" : 7,
         "name" : "바벨",
         "won" : 30000,
         "img" : "thing7.jpg",
         "tag" : "health"
     },
     {
+        "id" : 8,
         "name" : "스미스머신",
         "won" : 155000,
         "img" : "thing8.jpg",
         "tag" : "health"
     },
     {
+        "id" : 9,
         "name" : "벨트",
         "won" : 40000,
         "img" : "thing9.jpg",
         "tag" : "health"
     },
     {
+        "id" : 10,
         "name" : "딥스바",
         "won" : 25000,
         "img" : "thing10.jpg",

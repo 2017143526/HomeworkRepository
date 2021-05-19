@@ -4,14 +4,14 @@ fetch('products.json').then(function(response) {
     return response.json();
   }).then(function(json) {
     products = json;
-    item_list(products, 0, 6);
+    item_list(products, 0, 4);
   }).catch(function(err) {
     console.log('error');
   });
   
   window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
-      item_list(products, 6, products.length);
+      item_list(products, 0, products.length);
       //const main = document.querySelector('main');
       //main.innerHTML="hahaha";
     }
@@ -108,7 +108,8 @@ fetch('products.json').then(function(response) {
       
       } else {
 
-        for(let i = start; i < end; i++) {
+        
+        for(let i = 0; i < products_list.length; i++) {
           each_item(products_list[i]);
         }
 
