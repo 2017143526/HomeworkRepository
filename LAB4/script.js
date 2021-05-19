@@ -18,12 +18,9 @@ fetch('products.json').then(function(response) {
   
   }
 
-  function initialize(products) {
-    const main = document.querySelector('main');
-    main.innerHTML="<h1>ahhaha</h1>";
-  }
+  
   // sets up the app logic, declares required variables, contains all the other functions
-  /*
+  
   function initialize(products) {
     // grab the UI elements that we need to manipulate
     const category = document.querySelector('#category');
@@ -197,7 +194,7 @@ fetch('products.json').then(function(response) {
       // append the elements to the DOM as appropriate, to add the product to the UI
       main.appendChild(section);
       /*section.appendChild(para);*/
-      /*
+     
       function showMore(){
         section.appendChild(heading);
         section.appendChild(para);
@@ -208,4 +205,4 @@ fetch('products.json').then(function(response) {
   
     }
   }
-  */
+  
