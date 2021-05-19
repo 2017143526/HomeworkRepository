@@ -12,8 +12,8 @@ fetch('products.json').then(function(response) {
   window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight){
       //item_list(products);
-      const main = document.querySelector('main');
-      main.innerHTML="hahaha";
+      //const main = document.querySelector('main');
+      //main.innerHTML="hahaha";
     }
   
   }
@@ -108,11 +108,11 @@ fetch('products.json').then(function(response) {
       
       } else {
         for(let i = 0; i < products_list.length; i++) {
-          fetchBlob(products_list[i]);
+          each_item(products_list[i]);
         }
       }
     }
-
+/*
     function fetchBlob(product) {
       
       let url = 'image_list/' + product.img;
@@ -126,9 +126,9 @@ fetch('products.json').then(function(response) {
         each_item(objectURL, product);
       });
     }
-  
+  */
    
-    function each_item(objectURL, product) {
+    function each_item(product) {
 
       const div = document.createElement('div');
       const h3 = document.createElement('h3');
@@ -145,7 +145,7 @@ fetch('products.json').then(function(response) {
       h3.textContent = product.name;
       h4.textContent = product.won + "원";
   
-      image.src = objectURL;
+      image.src = 'image_list/' + product.img;
       image.alt = product.name;
       image.classList.add("productimage");
   
