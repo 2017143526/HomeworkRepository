@@ -87,9 +87,15 @@ footer{position: absolute;
 }
 
 .productimage{
-        width: 300px;
-        height: 300px;
+        margin-left: 10px;
+        margin-top: 30px;
+        width: 250px;
+        height: 250px;
         position: relative;
+}
+
+.result{
+        margin-top: 20px;
 }
 
 
@@ -103,9 +109,14 @@ footer{position: absolute;
         width: 1020px;
         margin-bottom: 30px;
 }
-form p {font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;}
-main{
+
+.items{
+        margin-left: 10px;
         display: flex;
+        flex-flow: row wrap;
         border-left : 3px solid dimgray;
 }
+
+form p {font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;}
+
