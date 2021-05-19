@@ -1,0 +1,62 @@
+[
+    {
+        "name" : "스트랩",
+        "price" : 70000,
+        "image" : "thing1.jpg",
+        "type" : "bodyweight"
+    },
+    {
+        "name" : "케틀벨",
+        "price" : 20000,
+        "image" : "thing2.jpg",
+        "type" : "bodyweight"
+    },
+    {
+        "name" : "AB슬라이드",
+        "price" : 15000,
+        "image" : "thing3.jpg",
+        "type" : "bodyweight"
+    },
+    {
+        "name" : "런닝머신",
+        "price" : 240000,
+        "image" : "thing4.jpg",
+        "type" : "bodyweight"
+    },
+    {
+        "name" : "턱걸이 기구",
+        "price" : 85000,
+        "image" : "thing5.jpg",
+        "type" : "bodyweight"
+    },
+    {
+        "name" : "덤벨",
+        "price" : 15000,
+        "image" : "thing6.jpg",
+        "type" : "health"
+    },
+    {
+        "name" : "바벨",
+        "price" : 30000,
+        "image" : "thing7.jpg",
+        "type" : "health"
+    },
+    {
+        "name" : "스미스머신",
+        "price" : 155000,
+        "image" : "thing8.jpg",
+        "type" : "health"
+    },
+    {
+        "name" : "벨트",
+        "price" : 40000,
+        "image" : "thing9.jpg",
+        "type" : "health"
+    },
+    {
+        "name" : "딥스바",
+        "price" : 25000,
+        "image" : "thing10.jpg",
+        "type" : "bodyweight"
+    }
+]  

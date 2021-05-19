@@ -1,0 +1,138 @@
+
+header {
+        position: absolute;
+        left:50%;
+        margin-left: -510px;
+}
+footer{position: absolute;
+        font-size: 20px;
+        z-index: 3;
+        top: 250px;
+        right: 0px;}
+
+.all {
+        position: absolute;
+        width: 1020px;
+        left: 50%;
+        margin-left: -510px;
+}
+.first {z-index: 2;
+        position: absolute;
+        top:50px;
+        left:50%;
+        margin-left: -510px;
+        }
+       
+.second {z-index: 1;
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 1020px;
+        height: 300px;}
+.content{position: absolute;
+        top:330px;
+        border-top : 5px solid dimgray;
+        margin-top: 20px;
+        width: 1020px;
+        }
+.box    {
+        margin-top: 30px;}
+.button {text-align: center;
+        margin-bottom: 20px;}
+.strong {color: crimson;}
+.nav {position: relative;
+        top:310px;
+        left:0;
+        z-index: 4;
+         }
+.nav_login{
+        width:80px;
+        background-color: white;
+        border: none;
+        border-left : 3px solid crimson;
+        border-right : 3px solid crimson;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        padding: 2px 0;
+        color: dimgray;
+}
+.nav_signup{
+        width:80px;
+        background-color: white;
+        border: none;
+        border-left : 3px solid crimson;
+        border-right : 3px solid crimson;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        padding: 2px 0;
+        color: dimgray;
+}
+.nav_index{
+        width:80px;
+        background-color: white;
+        border: none;
+        border-left : 3px solid crimson;
+        border-right : 3px solid crimson;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        padding: 2px 0;
+        color: dimgray;
+}
+.item{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 1020px;
+        height: 300px;
+        
+}
+.item1{
+        border: 1px solid black; 
+        float: left; 
+        width: 300px;
+        height: 300px;
+        margin-left: 150px;
+        position: relative;
+}
+.item2{
+        border: 1px solid black; 
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin-left: 120px;
+        position: relative;
+}
+.thing1{
+        position:absolute; 
+        top:25%; 
+        left: 25%;
+        height:75%;
+        width: 75%;
+}
+
+.thing2{
+        position:absolute; 
+        top:25%; 
+        left: 25%;
+        height:75%;
+        width: 75%;
+}
+
+.intro{
+        position: relative;
+        column-count: 3;
+        column-gap: 30px;
+        column-rule-style: solid;
+        column-rule-width: 2px;
+        column-width: 320px;
+        width: 1020px;
+        margin-bottom: 30px;
+}
+form p {font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;}
+        
