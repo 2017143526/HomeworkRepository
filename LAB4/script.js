@@ -10,7 +10,7 @@ fetch('products.json').then(function(response) {
     let products = json;
     initialize(products);
   }).catch(function(err) {
-    console.log('Fetch problem: ' + err.message);
+    console.log('error');
   });
   
   window.onscroll = () => {
