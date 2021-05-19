@@ -69,25 +69,25 @@
         "name" : "레깅스",
         "won" : 15000,
         "img" : "thing12.jpg",
-        "tag" : "Pilates"
+        "tag" : "pilates"
     },
     {
         "name" : "마사지공",
         "won" : 20000,
         "img" : "thing13.jpg",
-        "tag" : "Pilates"
+        "tag" : "pilates"
     },
     {
         "name" : "요가메트",
         "won" : 40000,
         "img" : "thing14.jpg",
-        "tag" : "Pilates"
+        "tag" : "pilates"
     },
     {
         "name" : "고무줄",
         "won" : 5000,
         "img" : "thing15.jpg",
-        "tag" : "Pilates"
+        "tag" : "pilates"
     },
     {
         "name" : "플레이트",
