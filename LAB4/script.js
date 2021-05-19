@@ -58,7 +58,7 @@ fetch('products.json').then(function(response) {
 
         if(category.value === 'All') {
           products_category_list = products;
-          selectProducts();
+          search_product();
 
         } else {
 
@@ -69,12 +69,12 @@ fetch('products.json').then(function(response) {
             }
           }
 
-          selectProducts();
+          search_product();
         }
       }
     }
 
-    function selectProducts() {
+    function search_product() {
 
       if(serch_item.value === '') {
         products_list = products_category_list;
