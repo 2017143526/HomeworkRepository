@@ -34,7 +34,7 @@ footer{position: absolute;
         border-top : 5px solid dimgray;
         margin-top: 20px;
         width: 1020px;
-        
+        display: flex;
         }
 .box    {
         margin-top: 30px;}
@@ -105,4 +105,7 @@ footer{position: absolute;
 }
 form p {font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;}
-
+main{
+        display: flex;
+        border-left : 3px solid dimgray;
+}
